@@ -1,0 +1,65 @@
+[
+    {
+      "image": "../Asset/Rectangle 2-2.png",
+      "course_name": "Introduction to C Programming",
+      "credit": 1,
+      "price": 15000,
+      "details": "Learn the basics of programming using the C language. Explore variables, loops, and functions. Gain a strong foundation in C programming concepts."
+    },
+    {
+      "image": "../Asset/Rectangle 2-3.png",
+      "course_name": "Introduction to Algorithms",
+      "credit": 2,
+      "price": 25000,
+      "details": "Study fundamental algorithms and data structures. Understand algorithm design and analysis. Solve complex problems using efficient algorithms."
+    },
+    {
+      "image": "../Asset/Rectangle 2-4.png",
+      "course_name": "Introduction to C++ for DSA",
+      "credit": 10,
+      "price": 10000,
+      "details": "Learn C++ programming in the context of Data Structures and Algorithms (DSA). Implement DSA concepts in C++ for efficient problem-solving."
+    },
+    {
+      "image": "../Asset/Rectangle 3.png",
+      "course_name": "Basic Data Structures",
+      "credit": 5,
+      "price": 35000,
+      "details": "Explore essential data structures like arrays, linked lists, stacks, and queues. Understand their operations and when to use them in programming."
+    },
+    {
+      "image": "../Asset/Rectangle 2.png",
+      "course_name": "Introduction to OOP Python",
+      "credit": 5,
+      "price": 19000,
+      "details": "Master Object-Oriented Programming (OOP) principles in Python. Create classes, objects, and reusable code. Build Python applications using OOP concepts."
+    },
+    {
+      "image": "../Asset/Rectangle 2-5.png",
+      "course_name": "Software Engineering",
+      "credit": 2,
+      "price": 23000,
+      "details": "Learn the principles of software engineering. Explore software development methodologies, project management, and software quality assurance."
+    },
+    {
+      "image": "../Asset/Rectangle 3-1.png",
+      "course_name": "AWS, Cloud Computing",
+      "credit": 5,
+      "price": 35000,
+      "details": "Get hands-on experience with Amazon Web Services (AWS). Learn about cloud computing, AWS services, and deployment strategies."
+    },
+    {
+      "image": "../Asset/Rectangle 2-1.png",
+      "course_name": "Database (MySQL)",
+      "credit": 5,
+      "price": 19000,
+      "details": "Understand the fundamentals of relational databases using MySQL. Learn SQL queries, database design, and data manipulation."
+    },
+    {
+      "image": "../Asset/Rectangle 2-6.png",
+      "course_name": "Problem-Solving Part",
+      "credit": 2,
+      "price": 23000,
+      "details": "Enhance your problem-solving skills. Practice solving coding challenges, puzzles, and algorithmic problems to prepare for technical interviews."
+    }
+  ]
