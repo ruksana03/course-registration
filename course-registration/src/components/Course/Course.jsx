@@ -1,7 +1,8 @@
 import './Course.css'
-const Course = ({course}) => {
+
+const Course = ({course, handleselectCourse}) => {
     const {image, course_name, credit, price, details} = course;
-    console.log(course)
+    // console.log(course)
     return (
         <div className="course"> 
             <img src={image} alt="" />
@@ -13,7 +14,7 @@ const Course = ({course}) => {
                 <img src="/course-registration/Asset/Frame.jpg" alt="" />
                 <p>Credit : {credit}hr</p>
             </div>
-        <button>Select</button>
+            <button onClick={() =>handleselectCourse(course)}>Select:</button>
         </div>
     );
 };

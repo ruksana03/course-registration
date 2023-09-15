@@ -30,9 +30,15 @@
   /* Styles for small devices (sm) */
   @media (max-width: 767px) {
     .course-card{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+  }
+    .course-container{
+        display: flex;
+        flex-direction: column-reverse;
         gap: 20px;
     }
+    
   }
   
