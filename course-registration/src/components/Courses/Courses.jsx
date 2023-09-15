@@ -9,6 +9,8 @@ const Courses = () => {
     const [courses, setCourses] = useState([]);
     const [selectedCourses, setSelectedCourses] = useState([]);
     const [reminingCredit, setReminingCredit]=useState(0);
+    const [totalCredit, setTotalCredit] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0);
 
     useEffect(() => {
         fetch('courses-info.json')
@@ -20,14 +22,23 @@ const Courses = () => {
         const isExist = selectedCourses.find((item) => item.course_name == course.course_name);
 
         let sumOfCredit = course.credit;
+        let sumOfPrice = course.price;
         if (isExist) {
            return alert("Already Selected !!!")
         }
         else {
             selectedCourses.forEach(item =>{
                 sumOfCredit = sumOfCredit + item.credit;
+                sumOfPrice = sumOfPrice + item.price;
             });
             const totalReminingCredit = 20 - sumOfCredit;
+            setTotalCredit(sumOfCredit);
+            setTotalPrice(sumOfPrice);
+
+            if(sumOfCredit>20){
+               return alert("OOps!!! Credit Limit Crossed")
+            }
+            setReminingCredit(totalReminingCredit);
             setSelectedCourses([...selectedCourses, course]);
         }
 
@@ -48,7 +59,11 @@ const Courses = () => {
                     }
                 </div>
                 <div className="calculation">
-                    <Calculation selectedCourses={selectedCourses}></Calculation>
+                    <Calculation selectedCourses={selectedCourses}
+                    reminingCredit= {reminingCredit}
+                    totalCredit ={totalCredit}
+                    totalPrice={totalPrice}
+                    ></Calculation>
                 </div>
             </div>
         </div>
