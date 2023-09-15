@@ -1,0 +1,13 @@
+.course{
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    color: black;
+    text-align: left;
+    /* gap: 12px; */
+}
+.inside-course{
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,9 +1,9 @@
-import React from 'react';
+import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-               <h1>Course Registration</h1>
+        <div className='header'>
+               <h2>Course Registration</h2>
         </div>
     );
 };
