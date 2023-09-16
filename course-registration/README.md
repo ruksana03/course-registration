@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-- **Question 1**: Add at least 3 Project features
+- Question 1: Add at least 3 Project features
 
    - **Feature 1**: Describe the first feature of your project.
      - Explain what it does and why it's important.
