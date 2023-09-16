@@ -11,7 +11,6 @@ function App() {
       <Header></Header>
       <Courses></Courses>
       <div>
-      {/* Your application content */}
       <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} />
     </div>
     </>
