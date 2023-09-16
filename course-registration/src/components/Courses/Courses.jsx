@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 import './Courses.css'
 import Calculation from "../Calculation/Calculation";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Courses = () => {
 
     const [courses, setCourses] = useState([]);
     const [selectedCourses, setSelectedCourses] = useState([]);
-    const [reminingCredit, setReminingCredit]=useState(0);
+    const [reminingCredit, setReminingCredit] = useState(0);
     const [totalCredit, setTotalCredit] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
 
@@ -24,28 +27,29 @@ const Courses = () => {
         let sumOfCredit = course.credit;
         let sumOfPrice = course.price;
         if (isExist) {
-           return alert("Already Selected !!!")
+            // return alert("Already Selected !!!");
+           return  toast.success("Already Selected !!!");
         }
         else {
-            selectedCourses.forEach(item =>{
+            selectedCourses.forEach(item => {
                 sumOfCredit = sumOfCredit + item.credit;
                 sumOfPrice = sumOfPrice + item.price;
             });
             const totalReminingCredit = 20 - sumOfCredit;
-            setTotalCredit(sumOfCredit);
-            setTotalPrice(sumOfPrice);
+            
+       
 
-            if(sumOfCredit>20){
-               return alert("OOps!!! Credit Limit Crossed")
+            if (sumOfCredit > 20) {
+                // return alert("OOps!!! Credit Limit Crossed");
+               return  toast.success("OOps!!! Credit Limit Crossed");
             }
+            setTotalCredit(sumOfCredit);
             setReminingCredit(totalReminingCredit);
+            setTotalPrice(sumOfPrice);
             setSelectedCourses([...selectedCourses, course]);
         }
 
     };
-    console.log(selectedCourses);
-
-
     return (
         <div>
             <div className="course-container">
@@ -60,9 +64,9 @@ const Courses = () => {
                 </div>
                 <div className="calculation">
                     <Calculation selectedCourses={selectedCourses}
-                    reminingCredit= {reminingCredit}
-                    totalCredit ={totalCredit}
-                    totalPrice={totalPrice}
+                        reminingCredit={reminingCredit}
+                        totalCredit={totalCredit}
+                        totalPrice={totalPrice}
                     ></Calculation>
                 </div>
             </div>

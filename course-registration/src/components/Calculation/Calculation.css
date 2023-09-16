@@ -1,12 +1,58 @@
-.calculation{
-
+.calculation {
+    width: 312px;
+    height: 40%;
     background-color: white;
     border-radius: 12px;
+    padding: 24px;
 }
 
-.calculation-card{
+.calculation-card {
     color: black;
 }
-.calculation-section{
+
+.calculation-section {
+    border-radius: 12px;
+    background: #FFF;
+
     color: black;
+}
+
+.remaining-calculation {
+    color: #2F80ED;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.course-name-title {
+    color: #1C1B1B;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.listed-item {
+    color: rgba(28, 27, 27, 0.60);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    /* 187.5% */
+}
+
+#total {
+    color: rgba(28, 27, 27, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
 }

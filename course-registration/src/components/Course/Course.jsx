@@ -1,20 +1,22 @@
 import './Course.css'
+import Frame from '../../../Asset/Frame.svg'
+import dollar from '../../../Asset/dollar-sign 1.svg'
 
-const Course = ({course, handleselectCourse}) => {
-    const {image, course_name, credit, price, details} = course;
+const Course = ({ course, handleselectCourse }) => {
+    const { image, course_name, credit, price, details } = course;
     // console.log(course)
     return (
-        <div className="course"> 
+        <div className="course">
             <img src={image} alt="" />
-            <h3>{course_name}</h3>
-            <p>{details}</p>
+            <h3 className='cart-name'>{course_name}</h3>
+            <p className='cart-details'>{details}</p>
             <div className="inside-course">
-                <p>$</p>
-                <p>Price:{price}</p>
-                <img src="/course-registration/Asset/Frame.jpg" alt="" />
-                <p>Credit : {credit}hr</p>
+                <img src={dollar} alt="" />
+                <p className='cart-price'>Price:{price}</p>
+                <img src={Frame} alt="" />
+                <p className='cart-credit'>Credit : {credit}hr</p>
             </div>
-            <button onClick={() =>handleselectCourse(course)}>Select:</button>
+            <button className='btn' onClick={() => handleselectCourse(course)}>Select</button>
         </div>
     );
 };

@@ -1,3 +1,8 @@
-.header{
-    color: black;
+.header {
+    color: #1C1B1B;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

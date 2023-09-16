@@ -4,13 +4,23 @@ const Calculation = ({ selectedCourses,reminingCredit,totalCredit,totalPrice }) 
     console.log(selectedCourses);
     return (
         <div className="calculation-section">
-            <h3>Credit Hour Remaining {reminingCredit} hr</h3>
-            <h1>Course Name</h1>
+            <h3 className='remaining-calculation'>Credit Hour Remaining {reminingCredit} hr</h3>
+
+            <hr />
+            <h1 className='course-name-title'>Course Name</h1>
+            <ol>
             {selectedCourses.map((course) => (
-                <li key={course.course_name}>{course.course_name}</li>
+                
+                <li className='listed-item' key={course.course_name}>{course.course_name}</li>
             ))}
-            <p>Total Credit Hour :{totalCredit}</p>
-            <p>Total Price :{totalPrice} USD</p>
+            </ol>
+
+            <hr />
+            <p id='total'>Total Credit Hour :{totalCredit}</p>
+
+            <hr />
+
+            <p id='total'>Total Price :{totalPrice} USD</p>
         </div>
     );
 };
